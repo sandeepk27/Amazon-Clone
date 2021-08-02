@@ -68,18 +68,18 @@ function generateCartItems(cartItems) {
                 </div>
                 <div class="cart-item-counter w-48 flex items-center">
                     <div data-id="${item.id}" class="cart-item-decrease text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 mr-2 cursor-pointer">
-                        <i class="fas fa-chevron-left fa-xs"><</i>
+                        <i class="fas fa-chevron-left fa-xs"></i>
                     </div>
                     <h4 class="text-gray-400">x ${item.quantity}</h4>
                     <div data-id="${item.id}" class="cart-item-increase text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-200 ml-2 cursor-pointer">                                
-                        <i class="fas fa-chevron-right fa-xs">></i>
+                        <i class="fas fa-chevron-right fa-xs"></i>
                     </div>
                 </div>
                 <div class="cart-item-total-cost w-48 font-bold text-gray-400">
                     ${numeral(item.price * item.quantity).format('$0,0.00')}
                 </div>
                 <div data-id="${item.id}"  class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400">
-                    <i class="fas fa-times">x</i>
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
         `
